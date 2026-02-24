@@ -1,0 +1,75 @@
+'''
+This code is for controlling an LED connected to a Raspberry Pi using the GPIO pins. 
+It uses the gpiozero library to interact with the hardware.
+Prof. Nelson
+'''
+
+from gpiozero import LED
+from time import sleep
+
+# Define the switches and the associated GPIO pin
+sw1 = LED(0)
+sw2 = LED(1)
+sw3 = LED(2)
+sw4 = LED(3)
+sw5 = LED(4)
+sw6 = LED(5)
+sw7 = LED(6)
+sw8 = LED(7)
+sw9 = LED(8)
+sw10 = LED(9)
+sw11 = LED(10)
+sw12 = LED(11)
+sw13 = LED(12)
+sw14 = LED(13)
+sw15 = LED(14)
+sw16 = LED(15)
+sw17 = LED(16)
+sw18 = LED(17)
+sw19 = LED(18)
+sw20 = LED(19)
+sw21 = LED(20)
+sw22 = LED(21)
+sw23 = LED(22)
+sw24 = LED(23)
+
+# Make sure the GPIO is set to off to prevent any false starts
+sw1.off()
+sw2.off()
+sw3.off()
+sw4.off()
+sw5.off()
+sw6.off()
+sw7.off()
+sw8.off()
+sw9.off()
+sw10.off()
+sw11.off()
+sw12.off()
+sw13.off()
+sw14.off()
+sw15.off()
+sw16.off()
+sw17.off()
+sw18.off()
+sw19.off()
+sw20.off()
+sw21.off()
+sw22.off()
+sw23.off()
+sw24.off()
+sleep(1)
+while True:
+    sw1.on()
+    sw2.off()
+    sw3.on()
+    sw4.off()
+    print("1 0 1 0")
+    sleep(1)
+    
+    sw1.off()
+    sw2.on()
+    sw3.off()
+    sw4.on()
+    print("0 1 0 1")
+    sleep(1)
